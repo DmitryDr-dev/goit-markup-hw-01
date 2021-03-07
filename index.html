@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,8 +10,8 @@
 <!-- TODO Выполнена HTML-разметка всех элементов макета. -->
 <!-- Done В разметке есть теги для выделения основной структуры страницы: <header>, <main> и <footer>. -->
 <!-- TODO Логотип в хедере и футере - это ссылка с текстом, не изображение. -->
-<!-- TODO Тег <nav> использован единожды на странице – в хедере. Контакты в хедере (почта и телефон) находятся вне тега <nav>. -->
-<!-- TODO Тег <h1> использован один раз на странице. -->
+<!-- done Тег <nav> использован единожды на странице – в хедере. Контакты в хедере (почта и телефон) находятся вне тега <nav>. -->
+<!-- done Тег <h1> использован один раз на странице. -->
 <!-- TODO Элемент с текстом "Заказать услугу" - это кнопка с type="button". -->
 <!-- TODO Заголовки секций размечены тегом <h2>. -->
 <!-- TODO У тегов <img> указаны атрибуты размеров, как минимум width. -->
@@ -25,29 +25,31 @@
     <!-- nav -->
     <nav class="nav">
       <!-- logo -->
-      <a href="./index.html" class="logo-link">
+      <a class="link logo-link" href="./index.html">
         <span class="logo-link--blue">Web</span>Studio
       </a>
       <!-- site navigation -->
-      <ul class="navlist">
-        <li class="navlist-item">
-          <a href="" class="navlist-item__link">Студия</a>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a class="nav__list-link" href="">Студия</a>
         </li>
-        <li class="navlist-item">
-          <a href="" class="navlist-item__link">Портфолио</a>
+        <li class="nav__list-item">
+          <a class="nav__list-link" href="">Портфолио</a>
         </li>
-        <li class="navlist-item">
-          <a href="" class="navlist-item__link">Контакты</a>
+        <li class="nav__list-item">
+          <a class="nav__list-link" href="">Контакты</a>
         </li>
       </ul>
       <!-- /site navigation -->
     </nav>
     <!-- /nav -->
     <!-- contacts -->
-    <ul class="contlist">
-      <li class="contlist-item">
-        <a href="mailto:info@devstudio.com" class="contlist-item__link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="contlist-item__link">+38 096 111 11 11</a>
+    <ul class="contacts__list">
+      <li class="contacts__list-item">
+        <a class="contacts__list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      <li class="contacts__list-item">
+        <a class="contacts__list-link" href="tel:+380961111111">+38 096 111 11 11</a>
       </li>
     </ul>
     <!-- /contacts -->
@@ -55,7 +57,36 @@
   <!-- /header -->
   <!-- main -->
   <main class="main">
-
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Эффективные решения для вашего бизнеса</h1>
+      <button class="btn" type="button">Заказать услугу</button>
+    </section>
+    <!-- /Hero Section -->
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <!-- ! h2 shoul be hidden -->
+      <h2>Преимущества работы с нами</h2>
+      <ul class="benefits__list">
+        <li class="benefits__list-item">
+          <h3>Внимание к деталям</h3>
+          <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        </li>
+        <li class="benefits__list-item">
+          <h3>Пунктуальность</h3>
+          <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
+        <li class="benefits__list-item">
+          <h3>Планирование</h3>
+          <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </li>
+        <li class="benefits__list-item">
+          <h3>Современные технологии</h3>
+          <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- /Benefits Section -->
   </main>
   <!-- footer-->
   <footer class="footer"></footer>
